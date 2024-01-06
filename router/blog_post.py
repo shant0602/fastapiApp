@@ -38,7 +38,10 @@ def create_comment(
     ),
     content: str = Body(..., min_length=10, max_length=50, regex="^[a-z ]*$"),
     v: Optional[List[str]] = Query(["1.0", "1.1", "1.2"]),
-    comment_id: int = Path(None, le=5),
+    comment_id: int = Path(
+        ..., le=5
+    ),  # the ... is used as a placeholder to indicate that there is no default value, and the path
+    # parameter is mandatory
 ):
     return {
         "blog": blog,

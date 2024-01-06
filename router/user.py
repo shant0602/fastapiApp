@@ -27,7 +27,6 @@ def get_user(id: int, db: Session = Depends(get_db)):
 @router.post("/{id}/update")
 def update_user(id: int, request: UserBase, db: Session = Depends(get_db)):
     return db_user.update_user(db, id, request)
-    pass
 
 
 @router.get("/delete/{id}")
