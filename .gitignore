@@ -2,3 +2,4 @@
 /venv/
 /virtualenv/
 /myenv/
+*.db
