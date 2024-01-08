@@ -4,3 +4,4 @@ uvicorn
 passlib
 bcrypt
 pre-commit
+python-jose

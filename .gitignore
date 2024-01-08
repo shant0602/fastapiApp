@@ -3,3 +3,4 @@
 /virtualenv/
 /myenv/
 *.db
+.DS_Store
