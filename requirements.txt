@@ -5,3 +5,4 @@ passlib
 bcrypt
 pre-commit
 python-jose
+aiofiles
